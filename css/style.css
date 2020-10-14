@@ -1,0 +1,85 @@
+
+#jt_jshopping_label_slider {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.bx-wrapper {
+    float: left;
+}
+.bx-window {
+}
+#jt_jshopping_label_slider ul {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+#jt_jshopping_label_slider ul li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+}
+#jt_jshopping_label_slider .jt_prev_l, #jt_jshopping_label_slider #jt_next_l {
+}
+#jt_jshopping_label_slider .bx-prev {
+    float: left;
+}
+#jt_jshopping_label_slider #jt_next_l {
+    background-position: 100% 50%;
+    position: absolute;
+    right: 1.5%;
+}
+#jt_jshopping_label_slider #jt_prev_l a {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll left center;
+    cursor: pointer;
+    margin: 0 0 0 -6px;
+    position: absolute;
+    text-indent: -9999px;
+    width: 24px;
+    z-index: 9;
+}
+#jt_jshopping_label_slider #jt_next_l a {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll right center;
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+}
+#jt_jshopping_label_slider #jt_prev_l a {
+    float: left;
+}
+#jt_jshopping_label_slider #jt_next_l a {
+    background-position: right center;
+    position: absolute;
+}
+#jt_jshopping_label_slider .jt_prev_l_v, #jt_jshopping_label_slider .jt_next_l_v {
+    float: left;
+    height: 24px;
+    position: relative;
+    width: 100%;
+}
+#jt_jshopping_label_slider .jt_next_l_v {
+    clear: both;
+}
+#jt_jshopping_label_slider .jt_prev_l_v a, #jt_jshopping_label_slider .jt_next_l_v a {
+    cursor: pointer;
+    height: 24px;
+    position: absolute;
+    text-indent: -9999px;
+    width: 100%;
+}
+#jt_jshopping_label_slider .jt_prev_l_v a {
+    background: #2c2d35 url("../images/prev_v.png") no-repeat scroll center center;
+    position: absolute;
+    top: 0;
+}
+#jt_jshopping_label_slider .jt_next_l_v a {
+    background: #2c2d35 url("../images/next_v.png") no-repeat scroll center center;
+    bottom: 5px;
+    position: absolute;
+}
+#jt_jshopping_label_slider .product_label {
+    margin-left: -5px;
+    margin-top: 5px;
+    position: absolute;
+}
