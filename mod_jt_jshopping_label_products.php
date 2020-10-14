@@ -14,9 +14,9 @@
 defined('_JEXEC') or die;
     error_reporting(E_ALL & ~E_NOTICE);
     
-    if (!file_exists(JPATH_SITE.DS.'components'.DS.'com_jshopping'.DS.'jshopping.php')){
+    /*if (!file_exists(JPATH_SITE.DS.'components'.DS.'com_jshopping'.DS.'jshopping.php')){
         JError::raiseError(500,"Please install component \"joomshopping\"");
-    } 
+    } */
     
     require_once (JPATH_SITE.DS.'components'.DS.'com_jshopping'.DS."lib".DS."factory.php"); 
     require_once (JPATH_SITE.DS.'components'.DS.'com_jshopping'.DS."lib".DS."functions.php");        
@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
     JSFactory::loadLanguageFile();
     $jshopConfig = JSFactory::getConfig();
     
-    $product = &JTable::getInstance('product', 'jshop');
+//    $product = &JTable::getInstance('product', 'jshop');
     $label_id = $params->get('label_id'); 
     $count = $params->get('count_products', 4);
 	$product = JTable::getInstance('product', 'jshop');
@@ -49,6 +49,7 @@ defined('_JEXEC') or die;
     foreach($last_prod as $key=>$value){
         $last_prod[$key]->product_link = SEFLink('index.php?option=com_jshopping&controller=product&task=view&category_id='.$value->category_id.'&product_id='.$value->product_id, 1);
     }
+
 	
     $noimage = "noimage.gif";
     $show_image = $params->get('show_image',1);
@@ -85,6 +86,11 @@ defined('_JEXEC') or die;
 	$jt_move_slide_qty		= $params->get('jt_move_slide_qty');
 	$id_sfx					= $params->get('id_sfx');
 	$moduleclass_sfx        = $params->get ('moduleclass_sfx');
+
+
+
+
+
 
 	if ($jt_load_jquery == 0) {
 		//if ($jquery == 1) { $document->addScript('http://ajax.googleapis.com/ajax/libs/jquery/'.$jt_jquery_ver.'/jquery.min.js'); }

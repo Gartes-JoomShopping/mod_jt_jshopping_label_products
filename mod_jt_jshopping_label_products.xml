@@ -37,6 +37,14 @@
             <fieldset name="basic" addfieldpath="/modules/mod_jt_jshopping_label_products/admin/elements">  
 				<field type="asset" path="modules/mod_jt_jshopping_label_products/admin/" />
 				
+				<fieldset addfieldpath="/libraries/GNZ11/Extensions/Fields" />
+				<field name="__v"
+					type="version"
+					path_xml="/modules/mod_jt_jshopping_label_products/mod_jt_jshopping_label_products.xml"
+					class="version_plugin "
+					filter="raw" />
+				
+				
 				<field name="jquery" type="list" default="1"
 					label="MOD_JT_JSHOPPING_FIELD_JQUERY_LABEL"
 					description="MOD_JT_JSHOPPING_FIELD_JQUERY_DESC"
